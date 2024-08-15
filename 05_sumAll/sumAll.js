@@ -5,10 +5,9 @@ const sumAll = function(x, y) {
         return "ERROR";
     }
     let sum = 0;
-    let lowerNum = (x, y) => x <= y ? x : y;
-    let upperNum = (x, y) => x <= y ? y : x;
+    if (x > y) [x, y] = [y, x];
 
-    for (let i = lowerNum(x, y); i <= upperNum(x, y);i++){
+    for (let i = x; i <= y;i++){
         sum += i;
     }
     return sum;
