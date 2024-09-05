@@ -19,7 +19,6 @@ function cleanupStr(str){
 
 function getCharLimit(str){
     let charLimit = (str.length)/2;
-    
     if(str.length % 2 === 1){
         charLimit = (str.length -1)/2;
     }
