@@ -6,6 +6,7 @@ const fibonacci = function(n) {
     // if n>1, for n-1 times, calc last two terms in terms
     if (n < 0) return "OOPS";
     let terms = [0, 1];
+    if (typeof n === "string") n = +n;
     if (n > 1) {
         for(let i = 1; i < n; i++){
             const [a, b] = terms.slice(-2)
