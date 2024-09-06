@@ -4,8 +4,8 @@ const findTheOldest = function(people) {
         return livedUntil - person.yearOfBirth;
     };
     const byAge = (personA, personB) => getAge(personA) - getAge(personB);
-    const agesOfPeople = people.sort(byAge);
-    return agesOfPeople.pop();
+    const peopleByAge = people.sort(byAge);
+    return peopleByAge.pop();
 };
 
 // Do not edit below this line
